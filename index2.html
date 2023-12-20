@@ -7,22 +7,25 @@
     <body>
         <div class="container">
             <div >
-                <h1 class = "header_text"> Doing good today? </h1>
+                <h1 class = "header_text"> im sorry for that  </h1>
             </div>
-            <div class="gif_container">
-                <img src="./style/images/joey.gif" alt="Cute animated illustration">
+            <video width="400" height="500"
+            poster="doggy.mp4" controls>
+                <source src="./style/images/doggy.mp4" type="video/mp4">
+            </video>
+            <div >
+                <h1 class = "header_text"> feeling better?</h1>
             </div>
-            <div class = "buttons">
-                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+             <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">yes</button>
+                <button class="btn" id = "noButton" onclick="moveButton()">no</button>
                 <script>
                     function nextPage() {
-                        window.location.href = "index3.html";
+                        window.location.href = "yes.html";
                     }
                     
                     function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                        window.location.href = "index4.html";
                         document.getElementById('noButton').style.left = `${x}px`;
                         document.getElementById('noButton').style.top = `${y}px`;
                     }
