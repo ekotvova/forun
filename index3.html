@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style/css/styles.css">
+ </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text"> Glad to hear that! </h1>
+            </div>
+            <div class="gif_container">
+                 <img src="./style/images/flower.gif" alt="Cute animated illustration">
+            </div>
+            <div >
+                <h1 class = "header_text"> okay, sorry. how are you really? </h1>
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">really good</button>
+                <button class="btn" id = "noButton" onclick="moveButton()">not good</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        window.location.href = "index.html";
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>

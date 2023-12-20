@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style/css/styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text"> im sorry for that  </h1>
+            </div>
+            <video width="400" height="500"
+            poster="doggy.mp4" controls>
+                <source src="./style/images/doggy.mp4" type="video/mp4">
+            </video>
+            <div >
+                <h1 class = "header_text"> feeling better?</h1>
+            </div>
+             <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">yes</button>
+                <button class="btn" id = "noButton" onclick="moveButton()">no</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        window.location.href = "index4.html";
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
